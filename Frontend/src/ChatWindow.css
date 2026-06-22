@@ -1,0 +1,195 @@
+.chatWindow {
+    background: transparent;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar span {
+    margin: 1rem 2rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.userIconDiv {
+    margin: 1rem 2rem;
+}
+
+.userIcon {
+    background: linear-gradient(135deg, #7c3aed, #38bdf8);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+    transition: transform 0.15s ease;
+}
+
+.userIcon:hover {
+    transform: scale(1.07);
+}
+
+/* chat input */
+.chatInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.inputBox {
+    width: 100%;
+    position: relative;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: 20px;
+    font-size: 0.85rem;
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 20px 40px,
+                rgba(124, 58, 237, 0.08) 0 0 0 1px inset;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgba(124, 58, 237, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 20px 40px,
+                rgba(124, 58, 237, 0.35) 0 0 0 3px;
+}
+
+input::placeholder {
+    color: #a1a1aa;
+}
+
+#submit {
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    font-size: 18px;
+    position: absolute;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c3aed, #38bdf8);
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+#submit:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.5);
+}
+
+#submit i:hover {
+    color: #fff;
+}
+
+.info {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    color: #a1a1aa;
+}
+
+/* dropdown css */
+
+.dropDown {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    width: 160px;
+
+    background: rgba(40, 40, 45, 0.65);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0.4rem 0.5rem;
+    border-radius: 12px;
+    text-align: left;
+    z-index: 1000;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.dropDownItem {
+    font-size: 0.9rem;
+    margin: 0.3rem 0rem;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.15s ease;
+}
+
+.dropDownItem:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.uploadBtn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c3aed, #38bdf8);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+    transition: transform 0.15s ease;
+}
+
+.uploadBtn:hover {
+    transform: scale(1.08);
+}
+.inputBox {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pdfCard{
+    margin:10px auto;
+    width:90%;
+    padding:12px;
+    border-radius:12px;
+    background:#222;
+    color:white;
+    font-size:14px;
+    border:1px solid #444;
+}

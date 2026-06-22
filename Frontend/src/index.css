@@ -1,0 +1,14 @@
+.light-theme {
+    background: white;
+    color: black;
+}
+
+.light-theme .sidebar {
+    background: #f2f2f2;
+}
+
+.light-theme button {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
