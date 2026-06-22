@@ -8,7 +8,7 @@ async function login() {
 
     const response =
         await fetch(
-            "http://localhost:8080/auth/login",
+            "http://YOUR-RENDER-URL.onrender.com/auth/login",
             {
                 method: "POST",
 
@@ -34,6 +34,6 @@ localStorage.setItem(
 alert("Login Successful");
 
 window.location.href =
-"http://localhost:5173";
 
-}
+
+{}}
