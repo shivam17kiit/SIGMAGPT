@@ -2,7 +2,7 @@ import express from "express";
 import Thread from "../models/Thread.js";
 import getOpenAIAPIResponse from "../utils/openai.js";
 import Document from "../models/Document.js";
-import Chunk from "../models/Chunk.js";
+import Chunk from "../models/chunk.js";
 import { createEmbedding } from "../utils/embedding.js";
 import { cosineSimilarity } from "../utils/similarity.js";
 const router = express.Router();

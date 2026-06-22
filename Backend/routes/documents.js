@@ -3,7 +3,7 @@ import multer from "multer";
 import fs from "fs";
 import { createRequire } from "module";
 import Document from "../models/Document.js";
-import Chunk from "../models/Chunk.js";
+import Chunk from "../models/chunk.js";
 import { chunkText } from "../utils/chunkText.js";
 import { createEmbedding } from "../utils/embedding.js";
 
