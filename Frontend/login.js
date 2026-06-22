@@ -32,8 +32,6 @@ localStorage.setItem(
 );
 
 alert("Login Successful");
-
 window.location.href =
-"/";
-
+"https://sigmagpt-inky.vercel.app/";
 }
