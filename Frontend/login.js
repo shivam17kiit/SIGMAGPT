@@ -8,7 +8,7 @@ async function login() {
 
     const response =
         await fetch(
-            "http://YOUR-RENDER-URL.onrender.com/auth/login",
+            "https://sigmagpt-87lh.onrender.com/auth/login",
             {
                 method: "POST",
 
@@ -34,6 +34,6 @@ localStorage.setItem(
 alert("Login Successful");
 
 window.location.href =
+"/";
 
-
-{}}
+}
