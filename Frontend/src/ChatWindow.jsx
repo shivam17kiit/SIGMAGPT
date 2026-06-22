@@ -40,7 +40,7 @@ function ChatWindow() {
         };
 
         try {
-            const response = await fetch("https://sigmagpt-87lh.onrender.com/api/chat", options);
+            const response = await fetch("https://localhost:8080/api/chat", options);
             const res = await response.json();
             console.log(res);
             setReply(res.reply);
@@ -73,7 +73,7 @@ function ChatWindow() {
         formData.append("file", file);
 
         try {
-            const response = await fetch("https://sigmagpt-87lh.onrender.com/document/upload", {
+            const response = await fetch("https://localhost:8080/document/upload", {
                 method: "POST",
                 body: formData
             });

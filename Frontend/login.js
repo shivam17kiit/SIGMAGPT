@@ -8,7 +8,7 @@ async function login() {
 
     const response =
         await fetch(
-            "https://sigmagpt-87lh.onrender.com/auth/login",
+            "https://localhost:8080/auth/login",
             {
                 method: "POST",
 
@@ -33,5 +33,6 @@ localStorage.setItem(
 
 alert("Login Successful");
 window.location.href =
-"https://sigmagpt-inky.vercel.app/";
+"http://localhost:5173";
+
 }
